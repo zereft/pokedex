@@ -1,25 +1,25 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-    value: [],
+    team: []
 }
 
 export const teamSlice = createSlice({
     name: 'team',
     initialState,
     reducers: {
-        add: (state) => {
-            console.log(`add pokemon : ${state.value}`);
+        addToTeam: (state,action) => {
+            console.log(`add`);
         },
-        remove: (state) => {
-            console.log(`remove pokemon : ${state.value}`);
+        removeFromTeam: (state, action) => {
+            console.log(`remove`);
         },
-        change: (state) => {
-            console.log(`change pokemon : ${state.value}`);
+        replaceInTeam: (state, action) => {
+            console.log(`replace`);
         }
     }
 });
 
-export const { add, remove, change} = teamSlice.actions;
+export const { addToTeam, removeFromTeam, replaceInTeam} = teamSlice.actions;
 
 export default teamSlice.reducer;

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Rubik+Iso&display=swap')
+
+
+$title: 'Montserrat', sans-serif
+$text: 'Poppins', sans-serif
+
+$pokeTitle: 'Rubik Iso', cursive
+$pokeText: 'Handjet', cursive
+
+$primay: #352F44
+$secundary: #5C5470
+$third: #B9B4C7
+$fourth: #FAF0E6
+
+body
+    background: #fff
+    
+    &.old
+        background: $third
+        transition: all 3s cubic-bezier(0.215, 0.61, 0.355, 1) !important
+        -webkit-transition: all 3s cubic-bezier(0.215, 0.61, 0.355, 0.9) !important
+        -webkit-animation-duration: 3s !important
+        animation-duration: 3s !important
+
+.centerY
+    position: relative
+    transform: translateY(-50%)
+    top: 50%
+
+.centerX
+    position: relative
+    transform: translateX(-50%)
+    left: 50%
+
+.center
+    position: relative
+    transform: translate(-50%, -50%)
+    top: 50%
+    left: 50%
+
+.easeOutCubic 
+    transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1) !important
+    -webkit-transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 0.9) !important
+    -webkit-animation-duration: 1s !important
+    animation-duration: 1s !important
+
+.easeOutCubic075s
+    transition: all 0.75s cubic-bezier(0.215, 0.61, 0.355, 1) !important
+    -webkit-transition: all 0.75s cubic-bezier(0.215, 0.61, 0.355, 0.9) !important
+    -webkit-animation-duration: 0.75s !important
+    animation-duration: 0.75s !important
+
+.easeOutCubic05s
+    transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) !important
+    -webkit-transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 0.9) !important
+    -webkit-animation-duration: 0.5s !important
+    animation-duration: 0.5s !important
+
+.easeOutCubic03s
+    transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) !important
+    -webkit-transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 0.9) !important
+    -webkit-animation-duration: 0.3s !important
+    animation-duration: 0.3s !important
+
+.animate__swing
+    transform-origin: bottom center
+
+.app
+    .login
+        position: relative
+        display: block
+    .preload
+        position: relative
+        display: block
+        height: 100vh
+        .pokeball
+            display: block
+            margin: auto
+            height: 300px
+            width: 300px
+            background: url(./assets/images/pokeball.svg)no-repeat 50% 50% /contain
+            &.old
+                background: url(./assets/images/oldpokeball.png)no-repeat 50% 50% /contain
+    .foreword
+        .actor
+            display: block
+            height: 50vh
+            border: 1px solid red
+        .dialogue
+            display: block
+            height: 50vh
+            border: 1px solid red
