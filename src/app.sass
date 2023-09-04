@@ -12,8 +12,16 @@ $secundary: #5C5470
 $third: #B9B4C7
 $fourth: #FAF0E6
 
+*
+    box-sizing: border-box
+    outline: none !important
+    &:focus
+        outline: none !important
+
 body
     background: #fff
+    margin: 0
+    padding: 0
     
     &.old
         background: $third
@@ -82,11 +90,60 @@ body
             &.old
                 background: url(./assets/images/oldpokeball.png)no-repeat 50% 50% /contain
     .foreword
+        position: relative
+        display: block
         .actor
+            position: relative
             display: block
-            height: 50vh
-            border: 1px solid red
+            height: 60vh
+            width: 100%
+            .elchismoso
+                position: relative
+                display: block
+                margin: auto
+                height: 20vw
+                width: 20vw
+                background: url(./assets/images/elchismoso.png)no-repeat 50% 50% /contain
+            .elchismosoV2
+                position: relative
+                display: block
+                margin: auto
+                height: 20vw
+                width: 20vw
+                background: url(./assets/images/elchismosoV2.png)no-repeat 50% 50% /contain
         .dialogue
             display: block
-            height: 50vh
-            border: 1px solid red
+            height: 40vh
+            width: 100%
+            background: url(./assets/images/dialogbox.png)no-repeat 50% 50% /100% 100%
+            padding: 4vw 6vw
+            .box
+                display: block
+                width: 100%
+                height: 100%
+                span
+                    font-family: $pokeText
+                    font-size: 3.5vw
+                    line-height: 3.5vw
+                    font-weight: bold
+                    letter-spacing: 0.1vw
+                .inputNewTrainer
+                    display: none
+                    width: 0vw
+                    font-family: $pokeText
+                    font-size: 3.5vw
+                    line-height: 3.5vw
+                    font-weight: 900
+                    letter-spacing: 0.1vw
+                    border: none
+                    background: transparent
+                    border-bottom: 5px solid #000
+                    margin-left: 1vw
+                    &.on
+                        display: inline-block
+                        visibility: hidden
+                    &.move
+                        visibility: visible
+                        width: 25vw
+                        padding: 0 1vw
+            

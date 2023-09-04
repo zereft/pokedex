@@ -15,7 +15,7 @@ const PreLoad = () => {
     pokeball.classList.remove("animate__rollIn","easeOutCubic05s");
     pokeball.classList.add("animate__animated","animate__swing","animate__repeat-3");
 
-    await delay(3000);
+    await delay(3500);
     pokeball.classList.remove("animate__swing","animate__repeat-3");
     pokeball.classList.add("animate__bounceIn","old");
     document.body.classList.add("old");
@@ -24,7 +24,7 @@ const PreLoad = () => {
     pokeball.classList.remove("animate__bounceIn");
     pokeball.classList.add("animate__rollOut");
 
-    await delay(1500);
+    await delay(1000);
     dispatch(loading(true));
   }
 
