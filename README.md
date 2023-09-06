@@ -16,6 +16,15 @@
 [issues-url]: https://github.com/zereft/pokedex/issues
 [license-shield]: https://img.shields.io/badge/license-Open%20Source-blue.svg
 [license-url]: https://opensource.org/licenses
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-blue.svg
+[linkedin-url]: https://www.linkedin.com/in/tu-usuario/
+
+[react-shield]: https://img.shields.io/badge/-React%20JS-61DAFB.svg
+[react-url]: https://reactjs.org/
+[redux-toolkit-shield]: https://img.shields.io/badge/-Redux%20Toolkit-764ABC.svg
+[redux-toolkit-url]: https://redux-toolkit.js.org/
+[graphql-shield]: https://img.shields.io/badge/-GraphQL-E10098.svg
+[graphql-url]: https://graphql.org/
 
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
@@ -25,6 +34,7 @@
 [![Redux Toolkit][redux-toolkit-shield]][redux-toolkit-url]
 [![GraphQL][graphql-shield]][graphql-url]
 [![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 # Pokédex
 
