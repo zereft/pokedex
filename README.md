@@ -6,26 +6,25 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-<!-- [contributors-shield]: https://img.shields.io/github/contributors/usuario/repositorio.svg
-[contributors-url]: https://github.com/zereft/pokedex/repositorio/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/usuario/repositorio.svg
-[forks-url]: https://github.com/zereft/pokedex/repositorio/network/members
-[stars-shield]: https://img.shields.io/github/stars/usuario/repositorio.svg
-[stars-url]: https://github.com/zereft/pokedex/repositorio/stargazers
-[issues-shield]: https://img.shields.io/github/issues/usuario/repositorio.svg
-[issues-url]: https://github.com/zereft/pokedex/repositorio/issues
-[license-shield]: https://img.shields.io/github/license/usuario/repositorio.svg
-[license-url]: https://github.com/zereft/pokedex/repositorio/blob/master/LICENSE.txt -->
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-blue.svg
-[linkedin-url]: https://www.linkedin.com/in/marvin-escobar-zereft/
+[contributors-shield]: https://img.shields.io/github/contributors/zereft/pokedex.svg
+[contributors-url]: https://github.com/zereft/pokedex/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/zereft/pokedex.svg
+[forks-url]: https://github.com/zereft/pokedex/network/members
+[stars-shield]: https://img.shields.io/github/stars/zereft/pokedex.svg
+[stars-url]: https://github.com/zereft/pokedex/stargazers
+[issues-shield]: https://img.shields.io/github/issues/zereft/pokedex.svg
+[issues-url]: https://github.com/zereft/pokedex/issues
+[license-shield]: https://img.shields.io/badge/license-Open%20Source-blue.svg
+[license-url]: https://opensource.org/licenses
 
-<!-- [![Contributors][contributors-shield]][contributors-url]
+[![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url] -->
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
+[![React JS][react-shield]][react-url]
+[![Redux Toolkit][redux-toolkit-shield]][redux-toolkit-url]
+[![GraphQL][graphql-shield]][graphql-url]
+[![MIT License][license-shield]][license-url]
 
 # Pokédex
 
@@ -44,3 +43,45 @@ Esta aplicación está construida utilizando React JS y GraphQL para acceder a l
 - **Detalles de Pokémon:** Obtiene detalles más profundos de un Pokémon específico, incluyendo sus habilidades, movimientos y otros atributos.
 
 - **Búsqueda Avanzada:** Utiliza consultas GraphQL para buscar Pokémon basados en criterios específicos, como tipo, habilidades, estadísticas, etc.
+
+## Instrucciones para el Uso
+
+### React JS
+
+- La aplicación está construida con React JS. Para ejecutarla en tu entorno local, sigue estos pasos:
+
+  1. Asegúrate de tener [Node.js](https://nodejs.org/) instalado en tu sistema.
+
+  2. Clona este repositorio en tu máquina local:
+     ```
+     git clone https://github.com/zereft/pokedex.git
+     ```
+
+  3. Navega al directorio del proyecto:
+     ```
+     cd pokedex
+     ```
+
+  4. Instala las dependencias de Node.js:
+     ```
+     npm install
+     ```
+
+  5. Inicia la aplicación React:
+     ```
+     npm start
+     ```
+
+  6. Abre tu navegador web y visita `http://localhost:3000` para ver la aplicación en funcionamiento.
+
+### Redux Toolkit
+
+- Redux Toolkit se utiliza para gestionar el estado de la aplicación. Los slices y la configuración de Redux Toolkit ya están implementados en el proyecto.
+
+### GraphQL con Apollo Client
+
+- Apollo Client se utiliza para trabajar con GraphQL. La configuración del cliente Apollo y las consultas/mutaciones GraphQL ya están integradas en el proyecto.
+
+## Licencia
+
+Este proyecto está bajo la [Licencia MIT](LICENSE).
