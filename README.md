@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -26,7 +27,8 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-# pokédex
+
+# Pokédex
 
 ## Aplicación de React JS con GraphQL usando la API de PokeAPI
 
