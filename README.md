@@ -17,7 +17,9 @@
 [license-shield]: https://img.shields.io/badge/license-Open%20Source-blue.svg
 [license-url]: https://opensource.org/licenses
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-blue.svg
-[linkedin-url]: https://www.linkedin.com/in/tu-usuario/
+[linkedin-url]: https://www.linkedin.com/in/marvin-escobar-zereft/
+[pokeapi-shield]: https://img.shields.io/badge/API-PokeAPI-ff5050.svg
+[pokeapi-url]: https://pokeapi.co/
 
 [react-shield]: https://img.shields.io/badge/-React%20JS-61DAFB.svg
 [react-url]: https://reactjs.org/
@@ -33,6 +35,7 @@
 [![React JS][react-shield]][react-url]
 [![Redux Toolkit][redux-toolkit-shield]][redux-toolkit-url]
 [![GraphQL][graphql-shield]][graphql-url]
+[![PokeAPI][pokeapi-shield]][pokeapi-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
