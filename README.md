@@ -28,10 +28,10 @@
 [graphql-shield]: https://img.shields.io/badge/-GraphQL-E10098.svg
 [graphql-url]: https://graphql.org/
 
-[![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
+[![Issues][issues-shield]][issues-url] -->
 [![React JS][react-shield]][react-url]
 [![Redux Toolkit][redux-toolkit-shield]][redux-toolkit-url]
 [![GraphQL][graphql-shield]][graphql-url]
