@@ -29,7 +29,7 @@
 
 # Pokédex
 
-## Aplicación de React JS con GraphQL usando la API de PokeAPI
+## Aplicación de React JS con GraphQL usando la API de <a href="https://pokeapi.co/">PokeAPI</a>
 
 Aplicación que utiliza React JS y GraphQL para interactuar con la API de PokeAPI, Esta aplicación te permitirá explorar y obtener información detallada sobre los Pokémon utilizando una interfaz de usuario amigable.
 
