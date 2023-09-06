@@ -10,11 +10,9 @@ function App() {
 
   return (
     <div className="app">
-      {!login
-      ?
-        <Login />
-      :
-        <Welcome />
+      {login
+      ? <Welcome />
+      : <Login />
       }
     </div>
   );

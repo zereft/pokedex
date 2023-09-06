@@ -12,7 +12,7 @@ const PreLoad = () => {
     const pokeball = document.querySelector(".pokeball");
 
     await delay(2000);
-    pokeball.classList.remove("animate__rollIn","easeOutCubic05s");
+    pokeball.classList.remove("animate__bounceInDown","easeOutCubic075s");
     pokeball.classList.add("animate__animated","animate__swing","animate__repeat-3");
 
     await delay(3500);
@@ -22,7 +22,7 @@ const PreLoad = () => {
 
     await delay(2000);
     pokeball.classList.remove("animate__bounceIn");
-    pokeball.classList.add("animate__rollOut");
+    pokeball.classList.add("animate__bounceOut");
 
     await delay(1000);
     dispatch(loading(true));
@@ -35,7 +35,7 @@ const PreLoad = () => {
   return (
     <div className='preload'>
         <div className='center'>
-          <div className='pokeball animate__rollIn easeOutCubic05s' />
+          <div className='pokeball animate__bounceInDown easeOutCubic075s' />
         </div>
     </div>
   )

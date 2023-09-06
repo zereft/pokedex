@@ -84,8 +84,8 @@ body
         .pokeball
             display: block
             margin: auto
-            height: 300px
-            width: 300px
+            height: 15vw
+            width: 15vw
             background: url(./assets/images/pokeball.svg)no-repeat 50% 50% /contain
             &.old
                 background: url(./assets/images/oldpokeball.png)no-repeat 50% 50% /contain
@@ -136,7 +136,8 @@ body
                     font-weight: 900
                     letter-spacing: 0.1vw
                     border: none
-                    background: transparent
+                    background: transparent url(./assets/images/pokeball.png)no-repeat 100% 50% / auto 50%
+                    filter: grayscale(1)
                     border-bottom: 5px solid #000
                     margin-left: 1vw
                     &.on
@@ -146,4 +147,44 @@ body
                         visibility: visible
                         width: 25vw
                         padding: 0 1vw
-            
+                    &.valid
+                        filter: none
+
+    .MessageBox
+        position: absolute
+        height: 20vw
+        width: 35vw
+        background: $third url(./assets/images/dialogbox.png)no-repeat 50% 50% /100% 100%
+        padding: 3vw
+        .box
+            display: block
+            padding: 3vw 1vw
+            p
+                display: block
+                width: 100%
+                text-align: center
+                font-family: $pokeText
+                font-size: 3.5vw
+                line-height: 3.5vw
+                margin: 0
+                font-weight: bold
+                letter-spacing: 0.1vw 
+        .action
+            display: block
+            text-align: center
+            button
+                display: inline-block
+                vertical-align: middle
+                border: 3px solid #000
+                margin: 0 0.5vw
+                padding: 0.5vw 1vw
+                background: $secundary
+                font-family: $pokeText
+                font-size: 2vw
+                line-height: 2vw
+                font-weight: bold
+                color: white
+                letter-spacing: 0.1vw
+                cursor: pointer
+                &:hover
+                    background: $primay
