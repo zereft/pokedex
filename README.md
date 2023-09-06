@@ -1,4 +1,4 @@
-# pokédex
+# Pokédex
 
 ## Aplicación de React JS con GraphQL usando la API de PokeAPI
 
