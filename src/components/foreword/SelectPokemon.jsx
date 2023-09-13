@@ -1,17 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { TypeAnimation } from 'react-type-animation';
 
-const SelectPokemon = ({newTrainer, setNewTrainer, bounceElChismoso}) => {
+const SelectPokemon = ({newTrainer, setNewTrainer}) => {
+
   return (
     <>
         <TypeAnimation
             sequence={[
               `Ammmmmmm ya veo “${newTrainer}” xd`,
-              1500,
-              bounceElChismoso,
+              1000,
               'Bueno para finalizar elige una de estas pokebolas para iniciar tu viaje esto es a la suerte si te sale un Charizard mamadisimo de nada xd jajaja',
               3000,
-              bounceElChismoso, // funcion para activar pokeballs
             ]}
             wrapper="span"
             speed={150}

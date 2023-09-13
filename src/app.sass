@@ -73,6 +73,10 @@ body
 .animate__swing
     transform-origin: bottom center
 
+.no-delay
+    --animate-delay: 0s !important
+
+
 .app
     .login
         position: relative
@@ -95,28 +99,50 @@ body
         .actor
             position: relative
             display: block
-            height: 60vh
+            height: 55vh
             width: 100%
             .elchismoso
                 position: relative
                 display: block
                 margin: auto
-                height: 20vw
-                width: 20vw
+                height: 18vw
+                width: 18vw
                 background: url(./assets/images/elchismoso.png)no-repeat 50% 50% /contain
             .elchismosoV2
                 position: relative
                 display: block
                 margin: auto
-                height: 20vw
-                width: 20vw
+                height: 18vw
+                width: 18vw
                 background: url(./assets/images/elchismosoV2.png)no-repeat 50% 50% /contain
+            .selectPokeball
+                text-align: center
+                .pokeball
+                    display: inline-block
+                    vertical-align: middle
+                    height: 15vw
+                    width: 15vw
+                    margin: 0 2vw
+                    cursor: pointer
+                    background: url(./assets/images/pokeball.png)no-repeat 50% 50% /contain
+                    --animate-delay: 0.5s
+            .selectPokemon
+                text-align: center
+                .pokemon
+                    display: block
+                    margin: auto
+                    width: 20vw
+                    height: 20vw
+                    border: 1px solid red
+                        
+                    
         .dialogue
             display: block
             height: 40vh
-            width: 100%
+            width: 96%
             background: url(./assets/images/dialogbox.png)no-repeat 50% 50% /100% 100%
             padding: 4vw 6vw
+            margin: auto
             .box
                 display: block
                 width: 100%
