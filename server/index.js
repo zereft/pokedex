@@ -17,7 +17,6 @@ const typeDefs = `
     description: String
     mythical: Boolean
     legendary: Boolean
-    evolutions: [String!]
   }
 
   type Query {
@@ -29,25 +28,6 @@ const typeDefs = `
 const getAttributes = async (id) => {
   const general = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`);
   const species = await axios.get(`https://pokeapi.co/api/v2/pokemon-species/${id}`);
-  const evChain = await axios.get(species.data.evolution_chain.url);
-
-  const evolutions = [];
-
-  const extractEvolutions = (chain) => {
-    if (chain.species) {
-      evolutions.push(chain.species.name);
-
-      if (chain.evolves_to && chain.evolves_to.length > 0) {
-        chain.evolves_to.forEach((ev) => {
-          extractEvolutions(ev);
-        });
-      }
-    }
-  };
-
-  extractEvolutions(evChain.data.chain);
-
-  const filteredEvolutions = evolutions.slice(0, 3);
 
   return {
     id: general.data.id,
@@ -59,7 +39,6 @@ const getAttributes = async (id) => {
     description: species.data.flavor_text_entries[7].flavor_text,
     mythical: species.data.is_mythical,
     legendary: species.data.is_legendary,
-    evolutions: filteredEvolutions,
   };
 };
 
