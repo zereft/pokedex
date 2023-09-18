@@ -17,11 +17,17 @@ const typeDefs = `
     description: String
     mythical: Boolean
     legendary: Boolean
+    evolutionChain: String
+  }
+
+  type ChainEvolution {
+    evolutions: [String]
   }
 
   type Query {
     AllPokemons(limit: Int): [Pokemon]
     PokemonByID(id: Int): Pokemon
+    GetChainEvolution(url: String): ChainEvolution
   }
 `;
 
@@ -39,8 +45,33 @@ const getAttributes = async (id) => {
     description: species.data.flavor_text_entries[7].flavor_text,
     mythical: species.data.is_mythical,
     legendary: species.data.is_legendary,
+    evolutionChain: species.data.evolution_chain.url,
   };
 };
+
+const extractSpeciesNames = (evolution, evolutions) => {
+  if (evolution.species) {
+    evolutions.push(evolution.species.name);
+
+    if (evolution.evolves_to && evolution.evolves_to.length > 0) {
+      evolution.evolves_to.forEach((ev) => {
+        extractSpeciesNames(ev, evolutions);
+      });
+    }
+  }
+};
+
+const getEvolutionsByChain = async (url) => {
+  const chain = await axios.get(url);
+  const evolutions = [];
+
+  extractSpeciesNames(chain.data.chain, evolutions);
+
+  return {
+    evolutions: evolutions
+  };
+}
+
 
 const resolvers = {
   Query: {
@@ -62,6 +93,13 @@ const resolvers = {
         return {
           attr: await getAttributes(id),
         };
+      } catch (error) {
+        throw new Error(error);
+      }
+    },
+    GetChainEvolution: async (_, { url }) => {
+      try {
+        return await getEvolutionsByChain(url);
       } catch (error) {
         throw new Error(error);
       }
